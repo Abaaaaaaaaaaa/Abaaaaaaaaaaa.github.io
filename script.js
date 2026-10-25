@@ -38,7 +38,7 @@ document.querySelector('#ticket-form').addEventListener('submit', (event) => {
   const summary = document.createElement('pre');
   summary.textContent = ticketText;
   const note = document.createElement('p');
-  note.textContent = 'Copie-le, puis envoie-le à la team sur Instagram.';
+  note.textContent = 'Copie ton ticket, ouvre la conversation Instagram, colle-le dans le DM et appuie sur Envoyer.';
   const copyButton = document.createElement('button');
   copyButton.type = 'button';
   copyButton.className = 'button button-dark submit-button';
@@ -58,10 +58,10 @@ document.querySelector('#ticket-form').addEventListener('submit', (event) => {
     }
   });
   const instagramLink = document.createElement('a');
-  instagramLink.href = 'https://www.instagram.com/intendance_multi.service/';
+  instagramLink.href = 'https://ig.me/m/intendance_multi.service';
   instagramLink.target = '_blank';
   instagramLink.rel = 'noreferrer';
-  instagramLink.textContent = 'Ouvrir Instagram ↗';
+  instagramLink.textContent = 'Ouvrir le DM de l’Intendance ↗';
   result.append(title, summary, note, copyButton, instagramLink);
   result.hidden = false;
   result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
